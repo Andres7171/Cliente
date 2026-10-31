@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Pacientes</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="mijavaScript.js" defer></script>    
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏥 Gestión de Pacientes</h1>
+        
+        <div class="botones">
+            <button id="btnMostrar">Mostrar Pacientes</button>            
+            <button id="btnOrdenado">Mostrar Ordenado</button>
+        </div>
+        
+        <div id="resultado">
+           <div  style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+           <div id="idTotal" class="paciente-item"><strong class="bonito">Total pacientes :</strong></div>
+           <div id="idEdadProm" class="paciente-item"><strong>Edad promedio :</strong></div>
+           <div id="idEdadMin" class="paciente-item"><strong>Edad mínima :</strong> </div>
+           <div id="idEdadMax" class="paciente-item"><strong>Edad máxima :</strong> </div>
+           <div id="idPesoProm" class="paciente-item"><strong>Peso promedio :</strong></div>
+           </div>
+        </div>
+    </div>    
+</body>
+</html>
